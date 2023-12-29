@@ -1,0 +1,22 @@
+--Setting the motion up or down
+        process( clk, reset, btnU_DB, btnD_DB)
+        begin
+            if( rising_edge(clk)) then
+                btn_cnt <= btn_cnt + 1;
+                if( reset = '1' ) then --Resetting the game
+                    moveUp <= '0';
+                    moveDown <= '0';              
+                elsif( btn_cnt >=  500000) then
+                    btn_cnt <= 0;
+
+	--Direction
+                    if( btnU_DB = '1') then
+                        moveUp <= '1';
+                        moveDown <= '0';
+	  elsif( btnD_DB = '1') then
+	      moveUp <= '0';
+	      moveDown <= '1';
+                    end if;
+                end if;
+            end if;
+        end process;

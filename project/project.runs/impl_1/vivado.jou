@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Sun Nov 12 00:06:46 2023
+# Process ID: 10904
+# Current directory: C:/Users/niels/Documents/Bachelor IoT 23-24/23-24 Digital sytem development/project/geometry-dash/project/project.runs/impl_1
+# Command line: vivado.exe -log game.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source game.tcl -notrace
+# Log file: C:/Users/niels/Documents/Bachelor IoT 23-24/23-24 Digital sytem development/project/geometry-dash/project/project.runs/impl_1/game.vdi
+# Journal file: C:/Users/niels/Documents/Bachelor IoT 23-24/23-24 Digital sytem development/project/geometry-dash/project/project.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source game.tcl -notrace

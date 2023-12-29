@@ -1,0 +1,1 @@
+-wto "cec428b052aa4d8490c4128df24fc4ee" --incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" -L "xpm" --snapshot "top_PS2_Controllers_Testbench_behav" "xil_defaultlib.top_PS2_Controllers_Testbench" -log "elaborate.log" 

@@ -1,0 +1,471 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Tue Dec 19 14:07:47 2023
+# Process ID: 10192
+# Current directory: C:/Users/niels/Documents/Bachelor IoT 23-24/23-24 Digital sytem development/project/geometry-dash/project
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8744 C:\Users\niels\Documents\Bachelor IoT 23-24\23-24 Digital sytem development\project\geometry-dash\project\project.xpr
+# Log file: C:/Users/niels/Documents/Bachelor IoT 23-24/23-24 Digital sytem development/project/geometry-dash/project/vivado.log
+# Journal file: C:/Users/niels/Documents/Bachelor IoT 23-24/23-24 Digital sytem development/project/geometry-dash/project\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/niels/Documents/Bachelor IoT 23-24/23-24 Digital sytem development/project/geometry-dash/project/project.xpr}
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/niels/Documents/Bachelor IoT 23-24/23-24 Digital sytem development/project/geometry-dash/project'
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/niels/Documents/Bachelor IoT 23-24/23-24 Digital sytem development/project/fpga-projects-master/DontHitTheBars/clk_wiz_0/clk_wiz_0.xci'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Users/niels/Documents/Vivado/Vivado/2019.2/data/ip'.
+WARNING: [IP_Flow 19-2162] IP 'clk_wiz_0' is locked:
+* IP definition 'Clocking Wizard (5.3)' for IP 'clk_wiz_0' (customized with software release 2016.4) has a newer major version in the IP Catalog.
+ERROR: [IP_Flow 19-993] Could not find IP file for IP 'clk_wiz_0'.
+CRITICAL WARNING: [IP_Flow 19-5097] Unable to determine VLNV from IP file; verify it has the correct syntax: 
+open_project: Time (s): cpu = 00:00:16 ; elapsed = 00:00:08 . Memory (MB): peak = 700.551 ; gain = 89.000
+ERROR: [Common 17-39] 'open_project' failed due to earlier errors.
+update_compile_order -fileset sources_1
+file mkdir C:/Users/niels/Documents/Bachelor IoT 23-24/23-24 Digital sytem development/project/geometry-dash/project/project.srcs/sim_1/new
+file mkdir C:/Users/niels/Documents/Bachelor IoT 23-24/23-24 Digital sytem development/project/geometry-dash/project/project.srcs/sim_1/new
+file mkdir C:/Users/niels/Documents/Bachelor IoT 23-24/23-24 Digital sytem development/project/geometry-dash/project/project.srcs/sim_1/new
+file mkdir C:/Users/niels/Documents/Bachelor IoT 23-24/23-24 Digital sytem development/project/geometry-dash/project/project.srcs/sim_1/new
+file mkdir C:/Users/niels/Documents/Bachelor IoT 23-24/23-24 Digital sytem development/project/geometry-dash/project/project.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+file mkdir C:/Users/niels/Documents/Bachelor IoT 23-24/23-24 Digital sytem development/project/geometry-dash/project/project.srcs/sim_1/new
+file mkdir {C:/Users/niels/Documents/Bachelor IoT 23-24/23-24 Digital sytem development/project/geometry-dash/project/project.srcs/sim_1/new}
+close [ open {C:/Users/niels/Documents/Bachelor IoT 23-24/23-24 Digital sytem development/project/geometry-dash/project/project.srcs/sim_1/new/game_tb.vhd} w ]
+add_files -fileset sim_1 {{C:/Users/niels/Documents/Bachelor IoT 23-24/23-24 Digital sytem development/project/geometry-dash/project/project.srcs/sim_1/new/game_tb.vhd}}
+update_compile_order -fileset sim_1
+set_property top game_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/niels/Documents/Bachelor IoT 23-24/23-24 Digital sytem development/project/geometry-dash/project/project.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Users/niels/Documents/Vivado/Vivado/2019.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/niels/Documents/Bachelor IoT 23-24/23-24 Digital sytem development/project/geometry-dash/project/project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'game' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/niels/Documents/Bachelor IoT 23-24/23-24 Digital sytem development/project/geometry-dash/project/project.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj game_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/niels/Documents/Bachelor IoT 23-24/23-24 Digital sytem development/project/geometry-dash/project/project.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/niels/Documents/Bachelor IoT 23-24/23-24 Digital sytem development/project/geometry-dash/project/project.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/niels/Documents/Bachelor IoT 23-24/23-24 Digital sytem development/project/geometry-dash/project/project.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+"xvhdl --incr --relax -prj game_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/niels/Documents/Bachelor IoT 23-24/23-24 Digital sytem development/project/geometry-dash/project/project.srcs/sources_1/new/PS2_ArrowKeys.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'PS2_ArrowKeys'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/niels/Documents/Bachelor IoT 23-24/23-24 Digital sytem development/project/geometry-dash/project/project.srcs/sources_1/new/SevSeg_4digit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'SevSeg_4digit'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/niels/Documents/Bachelor IoT 23-24/23-24 Digital sytem development/project/geometry-dash/project/project.srcs/sources_1/new/UpDownKeys_Controller.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'UpDownKeys_Controller'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/niels/Documents/Bachelor IoT 23-24/23-24 Digital sytem development/project/geometry-dash/project/project.srcs/sources_1/new/debounce.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'debounce'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/niels/Documents/Bachelor IoT 23-24/23-24 Digital sytem development/project/geometry-dash/project/project.srcs/sources_1/new/vga.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'vga'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/niels/Documents/Bachelor IoT 23-24/23-24 Digital sytem development/project/geometry-dash/project/project.srcs/sources_1/new/top_PS2_ArrowKeys.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'top_PS2_Controllers'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/niels/Documents/Bachelor IoT 23-24/23-24 Digital sytem development/project/geometry-dash/project/project.srcs/sources_1/new/game.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'game'
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/niels/Documents/Bachelor IoT 23-24/23-24 Digital sytem development/project/geometry-dash/project/project.sim/sim_1/behav/xsim'
+"xelab -wto cec428b052aa4d8490c4128df24fc4ee --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot game_behav xil_defaultlib.game xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Users/niels/Documents/Vivado/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto cec428b052aa4d8490c4128df24fc4ee --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot game_behav xil_defaultlib.game xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+ERROR: [VRFC 10-3353] formal port 'reset' has no actual or default value [C:/Users/niels/Documents/Bachelor IoT 23-24/23-24 Digital sytem development/project/geometry-dash/project/project.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.v:75]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/niels/Documents/Bachelor IoT 23-24/23-24 Digital sytem development/project/geometry-dash/project/project.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/niels/Documents/Bachelor IoT 23-24/23-24 Digital sytem development/project/geometry-dash/project/project.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 802.516 ; gain = 9.988
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+set_property top top_PS2_Controllers_Testbench [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/niels/Documents/Bachelor IoT 23-24/23-24 Digital sytem development/project/geometry-dash/project/project.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Users/niels/Documents/Vivado/Vivado/2019.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/niels/Documents/Bachelor IoT 23-24/23-24 Digital sytem development/project/geometry-dash/project/project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'top_PS2_Controllers_Testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/niels/Documents/Bachelor IoT 23-24/23-24 Digital sytem development/project/geometry-dash/project/project.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj top_PS2_Controllers_Testbench_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/niels/Documents/Bachelor IoT 23-24/23-24 Digital sytem development/project/geometry-dash/project/project.srcs/sim_1/new/game_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'top_PS2_Controllers_Testbench'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/niels/Documents/Bachelor IoT 23-24/23-24 Digital sytem development/project/geometry-dash/project/project.sim/sim_1/behav/xsim'
+"xelab -wto cec428b052aa4d8490c4128df24fc4ee --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip -L xpm --snapshot top_PS2_Controllers_Testbench_behav xil_defaultlib.top_PS2_Controllers_Testbench -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Users/niels/Documents/Vivado/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto cec428b052aa4d8490c4128df24fc4ee --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip -L xpm --snapshot top_PS2_Controllers_Testbench_behav xil_defaultlib.top_PS2_Controllers_Testbench -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture behavioral of entity xil_defaultlib.PS2_ArrowKeys [ps2_arrowkeys_default]
+Compiling architecture behavioral of entity xil_defaultlib.UpDownKeys_Controller [updownkeys_controller_default]
+Compiling architecture behavioral of entity xil_defaultlib.top_PS2_Controllers [top_ps2_controllers_default]
+Compiling architecture behavioral of entity xil_defaultlib.top_ps2_controllers_testbench
+Built simulation snapshot top_PS2_Controllers_Testbench_behav
+
+****** Webtalk v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/niels/Documents/Bachelor -notrace
+couldn't read file "C:/Users/niels/Documents/Bachelor": permission denied
+INFO: [Common 17-206] Exiting Webtalk at Tue Dec 19 14:15:05 2023...
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/niels/Documents/Bachelor IoT 23-24/23-24 Digital sytem development/project/geometry-dash/project/project.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "top_PS2_Controllers_Testbench_behav -key {Behavioral:sim_1:Functional:top_PS2_Controllers_Testbench} -tclbatch {top_PS2_Controllers_Testbench.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+source top_PS2_Controllers_Testbench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'top_PS2_Controllers_Testbench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 806.648 ; gain = 4.133
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/niels/Documents/Bachelor IoT 23-24/23-24 Digital sytem development/project/geometry-dash/project/project.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Users/niels/Documents/Vivado/Vivado/2019.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/niels/Documents/Bachelor IoT 23-24/23-24 Digital sytem development/project/geometry-dash/project/project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'top_PS2_Controllers_Testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/niels/Documents/Bachelor IoT 23-24/23-24 Digital sytem development/project/geometry-dash/project/project.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj top_PS2_Controllers_Testbench_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/niels/Documents/Bachelor IoT 23-24/23-24 Digital sytem development/project/geometry-dash/project/project.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/niels/Documents/Bachelor IoT 23-24/23-24 Digital sytem development/project/geometry-dash/project/project.sim/sim_1/behav/xsim'
+"xelab -wto cec428b052aa4d8490c4128df24fc4ee --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip -L xpm --snapshot top_PS2_Controllers_Testbench_behav xil_defaultlib.top_PS2_Controllers_Testbench -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Users/niels/Documents/Vivado/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto cec428b052aa4d8490c4128df24fc4ee --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip -L xpm --snapshot top_PS2_Controllers_Testbench_behav xil_defaultlib.top_PS2_Controllers_Testbench -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 806.988 ; gain = 0.000
+run all
+run all
+run all
+run all
+run all
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/niels/Documents/Bachelor IoT 23-24/23-24 Digital sytem development/project/geometry-dash/project/project.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Users/niels/Documents/Vivado/Vivado/2019.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/niels/Documents/Bachelor IoT 23-24/23-24 Digital sytem development/project/geometry-dash/project/project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'top_PS2_Controllers_Testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/niels/Documents/Bachelor IoT 23-24/23-24 Digital sytem development/project/geometry-dash/project/project.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj top_PS2_Controllers_Testbench_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/niels/Documents/Bachelor IoT 23-24/23-24 Digital sytem development/project/geometry-dash/project/project.srcs/sim_1/new/game_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'top_PS2_Controllers_Testbench'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/niels/Documents/Bachelor IoT 23-24/23-24 Digital sytem development/project/geometry-dash/project/project.sim/sim_1/behav/xsim'
+"xelab -wto cec428b052aa4d8490c4128df24fc4ee --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip -L xpm --snapshot top_PS2_Controllers_Testbench_behav xil_defaultlib.top_PS2_Controllers_Testbench -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Users/niels/Documents/Vivado/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto cec428b052aa4d8490c4128df24fc4ee --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip -L xpm --snapshot top_PS2_Controllers_Testbench_behav xil_defaultlib.top_PS2_Controllers_Testbench -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture behavioral of entity xil_defaultlib.PS2_ArrowKeys [ps2_arrowkeys_default]
+Compiling architecture behavioral of entity xil_defaultlib.UpDownKeys_Controller [updownkeys_controller_default]
+Compiling architecture behavioral of entity xil_defaultlib.top_PS2_Controllers [top_ps2_controllers_default]
+Compiling architecture behavioral of entity xil_defaultlib.top_ps2_controllers_testbench
+Built simulation snapshot top_PS2_Controllers_Testbench_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/niels/Documents/Bachelor IoT 23-24/23-24 Digital sytem development/project/geometry-dash/project/project.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "top_PS2_Controllers_Testbench_behav -key {Behavioral:sim_1:Functional:top_PS2_Controllers_Testbench} -tclbatch {top_PS2_Controllers_Testbench.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+source top_PS2_Controllers_Testbench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'top_PS2_Controllers_Testbench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 819.059 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/niels/Documents/Bachelor IoT 23-24/23-24 Digital sytem development/project/geometry-dash/project/project.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Users/niels/Documents/Vivado/Vivado/2019.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/niels/Documents/Bachelor IoT 23-24/23-24 Digital sytem development/project/geometry-dash/project/project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'top_PS2_Controllers_Testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/niels/Documents/Bachelor IoT 23-24/23-24 Digital sytem development/project/geometry-dash/project/project.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj top_PS2_Controllers_Testbench_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/niels/Documents/Bachelor IoT 23-24/23-24 Digital sytem development/project/geometry-dash/project/project.srcs/sim_1/new/game_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'top_PS2_Controllers_Testbench'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/niels/Documents/Bachelor IoT 23-24/23-24 Digital sytem development/project/geometry-dash/project/project.sim/sim_1/behav/xsim'
+"xelab -wto cec428b052aa4d8490c4128df24fc4ee --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip -L xpm --snapshot top_PS2_Controllers_Testbench_behav xil_defaultlib.top_PS2_Controllers_Testbench -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Users/niels/Documents/Vivado/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto cec428b052aa4d8490c4128df24fc4ee --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip -L xpm --snapshot top_PS2_Controllers_Testbench_behav xil_defaultlib.top_PS2_Controllers_Testbench -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture behavioral of entity xil_defaultlib.PS2_ArrowKeys [ps2_arrowkeys_default]
+Compiling architecture behavioral of entity xil_defaultlib.UpDownKeys_Controller [updownkeys_controller_default]
+Compiling architecture behavioral of entity xil_defaultlib.top_PS2_Controllers [top_ps2_controllers_default]
+Compiling architecture behavioral of entity xil_defaultlib.top_ps2_controllers_testbench
+Built simulation snapshot top_PS2_Controllers_Testbench_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/niels/Documents/Bachelor IoT 23-24/23-24 Digital sytem development/project/geometry-dash/project/project.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "top_PS2_Controllers_Testbench_behav -key {Behavioral:sim_1:Functional:top_PS2_Controllers_Testbench} -tclbatch {top_PS2_Controllers_Testbench.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+source top_PS2_Controllers_Testbench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'top_PS2_Controllers_Testbench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+update_compile_order -fileset sources_1
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/niels/Documents/Bachelor IoT 23-24/23-24 Digital sytem development/project/geometry-dash/project/project.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Users/niels/Documents/Vivado/Vivado/2019.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/niels/Documents/Bachelor IoT 23-24/23-24 Digital sytem development/project/geometry-dash/project/project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'top_PS2_Controllers_Testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/niels/Documents/Bachelor IoT 23-24/23-24 Digital sytem development/project/geometry-dash/project/project.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj top_PS2_Controllers_Testbench_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/niels/Documents/Bachelor IoT 23-24/23-24 Digital sytem development/project/geometry-dash/project/project.sim/sim_1/behav/xsim'
+"xelab -wto cec428b052aa4d8490c4128df24fc4ee --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip -L xpm --snapshot top_PS2_Controllers_Testbench_behav xil_defaultlib.top_PS2_Controllers_Testbench -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Users/niels/Documents/Vivado/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto cec428b052aa4d8490c4128df24fc4ee --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip -L xpm --snapshot top_PS2_Controllers_Testbench_behav xil_defaultlib.top_PS2_Controllers_Testbench -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/niels/Documents/Bachelor IoT 23-24/23-24 Digital sytem development/project/geometry-dash/project/project.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "top_PS2_Controllers_Testbench_behav -key {Behavioral:sim_1:Functional:top_PS2_Controllers_Testbench} -tclbatch {top_PS2_Controllers_Testbench.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+source top_PS2_Controllers_Testbench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'top_PS2_Controllers_Testbench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+run all
+run all
+set_property top Combined_Testbench [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+Command: launch_simulation 
+boost::filesystem::remove: Het proces heeft geen toegang tot het bestand omdat het door een ander
+proces wordt gebruikt: "C:/Users/niels/Documents/Bachelor IoT 23-24/23-24 Digital sytem development/project/geometry-dash/project/project.sim/sim_1/behav/xsim/simulate.log"
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/niels/Documents/Bachelor IoT 23-24/23-24 Digital sytem development/project/geometry-dash/project/project.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Users/niels/Documents/Vivado/Vivado/2019.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/niels/Documents/Bachelor IoT 23-24/23-24 Digital sytem development/project/geometry-dash/project/project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'Combined_Testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/niels/Documents/Bachelor IoT 23-24/23-24 Digital sytem development/project/geometry-dash/project/project.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj Combined_Testbench_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/niels/Documents/Bachelor IoT 23-24/23-24 Digital sytem development/project/geometry-dash/project/project.srcs/sources_1/new/UpDownKeys_Controller.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Combined_Testbench'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/niels/Documents/Bachelor IoT 23-24/23-24 Digital sytem development/project/geometry-dash/project/project.sim/sim_1/behav/xsim'
+"xelab -wto cec428b052aa4d8490c4128df24fc4ee --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip -L xpm --snapshot Combined_Testbench_behav xil_defaultlib.Combined_Testbench -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Users/niels/Documents/Vivado/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto cec428b052aa4d8490c4128df24fc4ee --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip -L xpm --snapshot Combined_Testbench_behav xil_defaultlib.Combined_Testbench -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture behavioral of entity xil_defaultlib.PS2_ArrowKeys [ps2_arrowkeys_default]
+Compiling architecture behavioral of entity xil_defaultlib.UpDownKeys_Controller [updownkeys_controller_default]
+Compiling architecture behavioral of entity xil_defaultlib.top_PS2_Controllers [top_ps2_controllers_default]
+Compiling architecture behavioral of entity xil_defaultlib.combined_testbench
+Built simulation snapshot Combined_Testbench_behav
+
+****** Webtalk v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/niels/Documents/Bachelor -notrace
+couldn't read file "C:/Users/niels/Documents/Bachelor": permission denied
+INFO: [Common 17-206] Exiting Webtalk at Tue Dec 19 14:36:04 2023...
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/niels/Documents/Bachelor IoT 23-24/23-24 Digital sytem development/project/geometry-dash/project/project.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Combined_Testbench_behav -key {Behavioral:sim_1:Functional:Combined_Testbench} -tclbatch {Combined_Testbench.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+source Combined_Testbench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Combined_Testbench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 832.625 ; gain = 0.000
+export_ip_user_files -of_objects  [get_files {{C:/Users/niels/Documents/Bachelor IoT 23-24/23-24 Digital sytem development/project/geometry-dash/project/project.srcs/sources_1/new/UpDownKeys_Controller.vhd}}] -no_script -reset -force -quiet
+remove_files  {{C:/Users/niels/Documents/Bachelor IoT 23-24/23-24 Digital sytem development/project/geometry-dash/project/project.srcs/sources_1/new/UpDownKeys_Controller.vhd}}
+set_property top top_PS2_Controllers_Testbench [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Dec 19 14:38:53 2023...

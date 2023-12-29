@@ -1,0 +1,36 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Wed Nov 29 14:08:22 2023
+# Process ID: 5172
+# Current directory: C:/Users/niels/Documents/Bachelor IoT 23-24/23-24 Digital sytem development/project/geometry-dash/project
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8252 C:\Users\niels\Documents\Bachelor IoT 23-24\23-24 Digital sytem development\project\geometry-dash\project\project.xpr
+# Log file: C:/Users/niels/Documents/Bachelor IoT 23-24/23-24 Digital sytem development/project/geometry-dash/project/vivado.log
+# Journal file: C:/Users/niels/Documents/Bachelor IoT 23-24/23-24 Digital sytem development/project/geometry-dash/project\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/niels/Documents/Bachelor IoT 23-24/23-24 Digital sytem development/project/geometry-dash/project/project.xpr}
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/niels/Documents/Bachelor IoT 23-24/23-24 Digital sytem development/project/geometry-dash/project'
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/niels/Documents/Bachelor IoT 23-24/23-24 Digital sytem development/project/fpga-projects-master/DontHitTheBars/clk_wiz_0/clk_wiz_0.xci'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Users/niels/Documents/Vivado/Vivado/2019.2/data/ip'.
+WARNING: [IP_Flow 19-2162] IP 'clk_wiz_0' is locked:
+* IP definition 'Clocking Wizard (5.3)' for IP 'clk_wiz_0' (customized with software release 2016.4) has a newer major version in the IP Catalog.
+ERROR: [IP_Flow 19-993] Could not find IP file for IP 'clk_wiz_0'.
+CRITICAL WARNING: [IP_Flow 19-5097] Unable to determine VLNV from IP file; verify it has the correct syntax: 
+open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:07 . Memory (MB): peak = 704.707 ; gain = 102.238
+ERROR: [Common 17-39] 'open_project' failed due to earlier errors.
+update_compile_order -fileset sources_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+INFO: [Labtools 27-2058] connect_hw_server command cancelled.
+INFO: [Common 17-344] 'connect_hw_server' was cancelled
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Nov 29 14:16:04 2023...
